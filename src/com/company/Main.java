@@ -54,7 +54,8 @@ public class Main {
                 }
                 case 5 -> {                                 //Вывести информацию о всех годовых отчетах
                     if (yReport == null || mReport == null){
-                        System.out.println("Годовых отчетов не обнаружено!");
+                        System.out.println("Информации об одном из видов отчетов не найдено." +
+                                "\nДля работы необходимо считать годовой и месячный отчет.");
                         break;
                     }
                     CSVReader.shortReportYear(mReport.getMonth());
